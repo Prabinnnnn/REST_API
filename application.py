@@ -13,7 +13,7 @@ class Drink(db.Model):
     name = db.Column(db.String(80), unique=True, nullable=False)
     description = db.Column(db.String(120))
 
-    def __repr__(self):   #repr stands for representation, this method is builtin in python to modify an output
+    def __repr__(self):   #repr stands for representation,  
         return f"{self.name} - {self.description}"
 @app.route('/')
 def index():
